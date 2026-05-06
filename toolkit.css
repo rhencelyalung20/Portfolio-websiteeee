@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212; 
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('image/toolkitbg.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.toolkit-wrapperbtn {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.back-nav {
+    margin-bottom: 40px;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #888888;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    color: #00ff88;
+    padding-left: 5px;
+}
+.toolkit-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+.title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.intro {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #a0a0a0;
+    margin-bottom: 50px;
+}
+
+
+.app-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+/* Individual Card */
+.box {
+    background: #0a0a0a; 
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 320px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    border: 1px solid #222; 
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px); 
+    border-color: #444;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #fff; 
+    padding: 5px;
+}
+
+.box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.highlight {
+    font-size: 0.95rem;
+    color: #00ff88; 
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.info {
+    font-size: 0.9rem;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+
+.lang-area {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.lang-area h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.tag:hover {
+    background-color: #00ff88;
+    color: #000;
+    border-color: #00ff88;
+    transition: 0.3s ease;
+}
+
+
+.outro {
+    max-width: 700px;
+    margin: 0 auto;
+    border-top: 1px solid #333;
+    padding-top: 30px;
+}
+
+.outro p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #888;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .toolkit-wrapper {
+        padding: 40px 15px;
+    }
+
+    .title {
+        font-size: 2.2rem
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .box {
+        width: 100%; 
+        max-width: 400px; 
+    }
+
+    .lang-area h2 {
+        font-size: 1.5rem;
+    }
+
+    .outro p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .box {
+        padding: 25px 15px; 
+    }
+
+    .box h3 {
+        font-size: 1.3rem;
+    }
+
+    .tag {
+        padding: 10px 20px;
+        font-size: 0.9rem; 
+    }
+}

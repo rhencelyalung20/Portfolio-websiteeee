@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('image/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 35px 10%;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #28a745;
+}
+
+.hero {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hero-content h2 {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.highlight {
+    color: #28a745;
+}
+
+.hero-content p {
+    font-size: 17px;
+    font-weight: 300;
+    max-width: 600px;
+    line-height: 1.8;
+    margin-bottom: 45px;
+    color: rgba(255, 255, 255, 0.85);
+    font-style: italic;
+}
+
+.btn-journey {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 16px 35px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 2px solid #28a745;
+}
+
+.btn-journey:hover {
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 10px 20px rgba(40, 167, 69, 0.2);
+    transform: translateY(-3px);
+}
+
+.motivation {
+    padding: 100px 10%;
+    background-color: #1a1a1a; 
+    text-align: center;
+}
+
+.header-text h3 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.cards-part {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: #064e3b; 
+    padding: 50px 30px;
+    flex: 1;
+    border-radius: 20px;
+    text-align: left;
+    position: relative;
+    transition: 0.4s ease;
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.2); 
+    border: 1px solid rgba(40, 167, 69, 0.3); 
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #065f46;
+    box-shadow: 0 0 30px rgba(40, 167, 69, 0.6); 
+    border: 1px solid rgba(40, 167, 69, 0.8);
+}
+
+.card h4 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.card p {
+    color: #a7f3d0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+    .hero-content h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 5%;
+        justify-content: center;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .menu a {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 60px 5%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-content h2 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        margin: 0 auto 30px;
+    }
+
+    .motivation {
+        padding: 60px 5%;
+    }
+
+    .header-text h3 {
+        font-size: 28px;
+    }
+
+    .cards-part {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .btn-journey {
+        padding: 12px 25px;
+        font-size: 13px;
+    }
+}

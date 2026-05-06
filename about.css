@@ -1,0 +1,230 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050505;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 5%;
+    line-height: 1.6;
+}
+.back-nav {
+    margin-bottom: 30px;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #888888;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.back-btn:hover {
+    color: #00ff88;
+    transform: translateX(-5px);
+}
+
+.main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #c0392b; 
+}
+
+.my-header {
+    margin-bottom: 40px;
+}
+
+.my-header p {
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    color: #555;
+}
+
+.my-header h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.red-dot {
+    display: inline-block;
+    width: 12px; height: 12px;
+    background: #c0392b;
+    margin-left: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(192, 57, 43, 0.5);
+}
+
+.top-row-flex-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.photo-box.main-image {
+    width: calc(50% - 10px);
+    height: 450px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    border-radius: 24px;
+}
+
+.photo-box.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name-on-photo {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.name-on-photo h2 {
+    font-size: 2.2rem;
+    color: #fff;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.8);
+}
+
+.right-column-container {
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    background: #111;
+    border-radius: 24px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #1a1a1a; 
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.box:hover {
+    border-color: #444; 
+    transform: translateY(-5px);
+}
+.with-bg {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 !important;
+}
+
+.with-bg::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.95) 15%, rgba(0,0,0,0.2) 100%);
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+}
+.with-bg h3, .with-bg h4 { color: #fff; }
+.with-bg p { color: #ccc; }
+
+.bio-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bio-box p {
+    font-size: 1rem;
+    color: #aaa;
+    line-height: 1.8;
+}
+
+.extra-photo-box {
+    height: 200px;
+    padding: 0;
+}
+
+.extra-photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.four-box-flex-container {
+    display: flex;
+    gap: 20px;
+}
+
+.equal-box {
+    width: calc(25% - 15px);
+    min-height: 200px;
+}
+
+.accent {
+    background-color: #c0392b;
+    border-color: #1a1a1a;
+}
+
+.accent h4, .accent p { color: #fff; }
+
+.arrow {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 1.2rem;
+    color: #c0392b;
+    z-index: 3;
+}
+
+.accent .arrow, .with-bg .arrow { color: #fff; }
+.my-footer {
+    margin-top: 50px;
+    text-align: right;
+}
+
+.small-logo {
+    height: 40px;
+    opacity: 0.2;
+    filter: grayscale(1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .top-row-flex-container, .four-box-flex-container {
+        flex-direction: column;
+    }
+    .photo-box.main-image, .right-column-container, .equal-box {
+        width: 100%;
+    }
+}
